@@ -7,6 +7,7 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import { smoothScroll } from '$lib/smoothScroll';
+	import { Toast } from '@skeletonlabs/skeleton';
 </script>
 
 <!-- App Shell -->
@@ -24,4 +25,5 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
+	<Toast />
 </AppShell>
