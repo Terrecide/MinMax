@@ -1,5 +1,6 @@
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 <script>
+	import { openForm } from '$lib/klaviyo';
 	import { smoothScroll } from '$lib/smoothScroll';
 	import SignUpForm from './signUpForm.svelte';
 </script>
@@ -10,7 +11,7 @@
 			<div class="space-y-10 flex flex-col justify-center items-start p-6">
 				<div class="h1 font-bold">MinMax your games</div>
 				<div class="h3">Use <b>reliable data</b> and <b>AI</b> to boost your game's success.</div>
-				<button class="btn variant-filled-primary" on:click={smoothScroll}>Sign Up Now</button>
+				<button class="btn variant-filled-primary" on:click={openForm}>Sign Up Now</button>
 			</div>
 			<div
 				class="hidden lg:grid lg:w-1/2 grid-cols-1 grid-rows-1 card variant-glass p-4 h-1/2 w-full col-span-2"
@@ -49,13 +50,6 @@
 </div>
 <div class="section-container" id="signUpForm">
 	<div class=" flex flex-col justify-center items-center text-center space-y-4 p-4 h-2/3">
-		<div class="mb-6">
-			<div class="h1 font-bold">Do you know?</div>
-			<p class="h4 pt-2">
-				More than 80% of games are not profitable...<br />
-				Publishers are not interested in supporting 95 - 99% of games...<br />
-			</p>
-		</div>
 		<SignUpForm />
 	</div>
 </div>

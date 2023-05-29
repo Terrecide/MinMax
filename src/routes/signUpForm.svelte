@@ -1,4 +1,5 @@
 <script>
+	import { openForm } from '$lib/klaviyo';
 	import emailjs from '@emailjs/browser';
 	import { toastStore } from '@skeletonlabs/skeleton';
 
@@ -53,24 +54,20 @@
 	}
 </script>
 
-<div class="card variant-glass p-6 text-center lg:w-1/2">
-	<div class="h3 font-bold mb-6">Don't be a statistic. Sign up for free!</div>
-	<form>
-		<label class="label">
-			<input
-				bind:value={emailValue}
-				class="input mb-2"
-				type="email"
-				placeholder="youremail@domain.com"
-			/>
-			<button
-				type="submit"
-				class="btn variant-filled-primary mt-6 w-full"
-				on:click={(e) => {
-					e.preventDefault();
-					submitForm();
-				}}>Sign Up</button
-			>
-		</label>
-	</form>
+<div class="text-center lg:w-1/2">
+	<div>
+		<div class="h1 font-bold">Do you know?</div>
+		<p class="h4 pt-2">
+			More than 80% of games are not profitable...<br />
+			Publishers are not interested in supporting 95 - 99% of games...<br />
+		</p>
+	</div>
+	<div class="h1 font-bold my-6">Don't be a statistic. Sign up for free!</div>
+	<button
+		type="submit"
+		class="btn variant-filled-primary w-full"
+		on:click={(e) => {
+			openForm();
+		}}>Sign Up</button
+	>
 </div>

@@ -6,8 +6,8 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import { smoothScroll } from '$lib/smoothScroll';
-	import { Toast } from '@skeletonlabs/skeleton';
+	/* import { Toast } from '@skeletonlabs/skeleton'; */
+	import { openForm } from '$lib/klaviyo';
 </script>
 
 <!-- App Shell -->
@@ -19,11 +19,12 @@
 				<strong class="text-3xl">MinMax</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<button class="btn variant-filled-primary" on:click={smoothScroll}> Sign Up </button>
+				<button class="btn variant-filled-primary" on:click={openForm}> Sign Up </button>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
-	<Toast />
+	<svelte:fragment slot="footer" />
+	<!-- <Toast /> -->
 </AppShell>
