@@ -7,7 +7,7 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	/* import { Toast } from '@skeletonlabs/skeleton'; */
-	import { openForm } from '$lib/klaviyo';
+	import { smoothScroll } from '$lib/smoothScroll';
 </script>
 
 <!-- App Shell -->
@@ -16,10 +16,10 @@
 		<!-- App Bar -->
 		<AppBar spacing="md:px-16">
 			<svelte:fragment slot="lead">
-				<strong class="text-3xl">MinMax</strong>
+				<strong class="text-3xl">MinMaxed</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<button class="btn variant-filled-primary" on:click={openForm}> Sign Up </button>
+				<button class="btn variant-filled-primary" on:click={smoothScroll}> Sign Up </button>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

@@ -54,20 +54,22 @@
 	}
 </script>
 
-<div class="text-center lg:w-1/2">
+<div class="text-center lg:w-1/2" id="signUpForm">
 	<div>
-		<div class="h1 font-bold">Do you know?</div>
-		<p class="h4 pt-2">
-			More than 80% of games are not profitable...<br />
-			Publishers are not interested in supporting 95 - 99% of games...<br />
-		</p>
+		<div class="h1 font-bold">Interested?</div>
+		<p class="h4 pt-2">Book a quick 30 min call with us.</p>
+		<div class="flex justify-center w-full h-full p-6">
+			<!-- Calendly inline widget begin -->
+			<div
+				class="calendly-inline-widget"
+				data-url="https://calendly.com/alex-ip/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+				style="min-width:100%;height:600px;"
+			/>
+			<!-- Calendly inline widget end -->
+		</div>
 	</div>
-	<div class="h1 font-bold my-6">Don't be a statistic. Sign up for free!</div>
-	<button
-		type="submit"
-		class="btn variant-filled-primary w-full"
-		on:click={(e) => {
-			openForm();
-		}}>Sign Up</button
+	<div class="h1 font-bold my-6">Sign up for our newsletter!</div>
+	<button type="submit" class="btn variant-filled-primary w-full" on:click={openForm}
+		>Sign Up</button
 	>
 </div>
