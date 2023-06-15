@@ -63,6 +63,7 @@
 		<SignUpForm />
 	</div>
 </div>
+<div class="p-4 pl-16 bg-surface-100-800-token">@ 2023, MinMaxed. All rights reserved</div>
 
 <style lang="postcss">
 	.section-image {
