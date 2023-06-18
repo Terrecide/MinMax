@@ -5,10 +5,11 @@
 	import SignUpForm from './signUpForm.svelte';
 </script>
 
-<div class="bg-surface-100-800-token hero-gradient">
-	<div class="section-container mx-auto">
+<div class="bg-surface-100-800-token hero-gradient relative">
+	<div class="section-hero lg:hidden" />
+	<div class="section-container mx-auto !z-10">
 		<div class="flex flex-col lg:flex-row items-center">
-			<div class="space-y-10 flex flex-col justify-center items-start p-6 w-2/4">
+			<div class="space-y-10 flex flex-col justify-center items-start p-6 lg:w-2/4">
 				<div class="h1 font-bold"><b>Minimize Risks</b> and <b>Maximize Returns</b></div>
 				<div class="h3">
 					The first cash flow <b>AI</b> analysis tool for the gaming industry.
@@ -22,7 +23,7 @@
 	</div>
 </div>
 <div class="section-container mx-auto text-center">
-	<div class="flex flex-col">
+	<div class="flex flex-col p-6">
 		<div class="h1 font-bold">Tired of juggling countless Excel sheets?</div>
 		<div class="h2 mt-4">
 			Say goodbye to manual spreadsheets and welcome a simplified, accurate, and efficient way to
@@ -68,6 +69,22 @@
 	.section-image {
 		@apply object-scale-down;
 		min-height: 200px;
+	}
+	.section-container {
+		z-index: 10;
+		position: relative;
+	}
+	.section-hero {
+		position: absolute;
+		background-image: url(landing-hero.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		/* opacity: 0.1; */
+		background-color: rgba(0, 0, 0, 100);
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		box-shadow: inset 0 0 0 2000px rgba(255, 0, 150, 0.2);
 	}
 	.hero-gradient {
 		background-image: radial-gradient(
