@@ -16,7 +16,7 @@
 		<!-- App Bar -->
 		<AppBar spacing="md:px-16">
 			<svelte:fragment slot="lead">
-				<strong class="text-3xl">MinMaxed</strong>
+				<strong><img src="/logo.png" class="w-16" alt="logo" /></strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<button class="btn variant-filled-primary" on:click={smoothScroll}> Sign Up </button>
