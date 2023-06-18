@@ -9,15 +9,14 @@
 	<div class="section-container mx-auto">
 		<div class="flex flex-col lg:flex-row items-center">
 			<div class="space-y-10 flex flex-col justify-center items-start p-6 w-2/4">
-				<div class="h1 font-bold">Gaming Finances Perfected</div>
+				<div class="h1 font-bold"><b>Minimize Risks</b> and <b>Maximize Returns</b></div>
 				<div class="h3">
-					<b>Minimize Risks</b> and <b>Maximize Returns</b>
-					with the first cash flow analysis tool for the gaming industry.
+					The first cash flow <b>AI</b> analysis tool for the gaming industry.
 				</div>
 				<button class="btn variant-filled-primary" on:click={smoothScroll}>Sign Up Now</button>
 			</div>
 			<div class="hidden lg:grid lg:w-1/2 grid-cols-1 grid-rows-1 p-4 h-1/2 w-full col-span-2">
-				<img class="section-image rounded-lg" src="/landing-hero.jpg" alt="hero" />
+				<img class="section-image rounded-lg" src="/landing-hero-2.png" alt="hero" />
 			</div>
 		</div>
 	</div>
