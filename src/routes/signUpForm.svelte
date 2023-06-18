@@ -67,6 +67,13 @@
 			/>
 			<!-- Calendly inline widget end -->
 		</div>
+		<p class="h4 pt-2">
+			Calendar not showing? <a
+				href="https://calendly.com/alex-ip/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+				target="_blank"
+				class="underline font-bold">Click here</a
+			>
+		</p>
 	</div>
 	<div class="h1 font-bold my-6">Sign up for our newsletter!</div>
 	<button type="submit" class="btn variant-filled-primary w-full" on:click={openForm}
