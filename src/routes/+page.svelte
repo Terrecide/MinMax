@@ -79,7 +79,7 @@
 	}
 	.section-hero {
 		position: absolute;
-		background-image: url(landing-hero.jpg);
+		background-image: url('/landing-hero.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		/* opacity: 0.1; */
